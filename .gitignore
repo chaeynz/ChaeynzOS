@@ -1,0 +1,37 @@
+# .gitignore
+
+# Object files
+*.o
+*.obj
+
+# Linker output
+*.bin
+*.elf
+
+# ISO Files
+*.iso
+
+# Image files
+*.img
+*.vmdk
+
+# Debug files
+*.dSYM/
+*.lst
+
+# Temp files
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+*.project
+*.settings/
+*.vscode/
+*.idea/
+
+# Build Directory
+/build/
