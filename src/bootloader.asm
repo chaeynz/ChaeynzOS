@@ -43,7 +43,11 @@ puts:
 .loop
     lodsb                   ; loads byte from DS:SI into AL & increments SI
     or al, al               ; performs bitwise OR and stores result in lefthand-side operand (Which is AL here)
-                            ; Won't modify AL, but if result is Zero, the ZEROFLAG will be set
+                            ; Won't modify AL, but if result is Zero, the ZEROFLAG will be set+
+    jz .done
+
+    mov ah, 0x0e
+    int 0x10
 
 main:
     mov ax, 0
